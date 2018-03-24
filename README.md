@@ -7,3 +7,5 @@ The admin-panel is hosted at :: https://naman0105.github.io/Grievance-portal/Mai
 
 I am using firebase real time database to store the data and firebase otp authentication to authenticate the employee. 
 
+![firebase structure](https://github.com/naman0105/Grievance-portal/blob/master/2018-03-24%20(1).png)
+
