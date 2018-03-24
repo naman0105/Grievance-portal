@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Welcome USer
+        </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+    </head>
+    <body>
+      <h3>the queries submitted by you are given below</h3>
+      <hr />
+      <div id="submitted">
+
+      </div>
+
+    <h2 id="dead"></h2>
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+            apiKey: "AIzaSyA4fnw4_dcogotGeaBx1rdyelMoFYh8pys",
+            authDomain: "ggrpdebugtest.firebaseapp.com",
+            databaseURL: "https://ggrpdebugtest.firebaseio.com",
+            projectId: "ggrpdebugtest",
+            storageBucket: "ggrpdebugtest.appspot.com",
+            messagingSenderId: "754564807810"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+        <script type="text/javascript" src="js/Check_Status.js"></script>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Second Page excel</title>
+        <style>
+                table, th, td
+                {
+                    margin:10px 0;
+                    border:solid 1px #333;
+                    padding:2px 4px;
+                    font:15px Tahoma;
+                }
+                th {
+                    font-weight:bold;
+                }
+
+/*
+                input[type=text] {
+                  width: 130px;
+                  box-sizing: border-box;
+                  border: 2px solid #ccc;
+                  border-radius: 4px;
+                  font-size: 16px;
+                  background-color: white;
+                  background-image: url('searchicon.png');
+                  background-position: 10px 10px;
+                  background-repeat: no-repeat;
+                  padding: 12px 20px 12px 40px;
+                  -webkit-transition: width 0.4s ease-in-out;
+                  transition: width 0.4s ease-in-out;
+              }
+
+              input[type=text]:focus {
+                  width: 100%;
+              }*/
+            </style>
+    </head>
+    <link rel="stylesheet" href="css/bootstrap.min.css"  />
+    <script src="js/xlsx.full.min.js"></script>
+
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <body>
+        <center>
+            <div class="container">
+                <div class="jumbotron">
+                    <br>
+                        <h3 id="Heading_Page_2"></h3>
+                        <br />
+                        <br />
+                    <!-- <button onclick="Display()">Display</button> -->
+
+                    <label>Search Box :</label>
+                    <input type="text" onkeyup="Search()" name="Search..." id="Search_box" placeholder="enter name">
+                    <!-- <button onclick="Search()">Search</button> -->
+              <br />
+              <hr />
+              <!-- <pre id="object"></pre> -->
+              <h3 id="object"></h3>
+              <br />
+              <div id="showData"></div>
+            </div>
+        </div>
+      </center>
+
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+
+         <!-- include the individual components we may need
+                 firebase-app - The core firebase client
+                 firebase-auth - Firebase Authentication
+                 firebase-database - The Firebase Realtime Database   -->
+
+        <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyA4fnw4_dcogotGeaBx1rdyelMoFYh8pys",
+            authDomain: "ggrpdebugtest.firebaseapp.com",
+            databaseURL: "https://ggrpdebugtest.firebaseio.com",
+            projectId: "ggrpdebugtest",
+            storageBucket: "",
+            messagingSenderId: "754564807810"
+          };
+          firebase.initializeApp(config);
+
+        </script>
+
+
+        
+
+    <script src="js/JS_Second_Page.js"></script>
+    </body>
+</html>

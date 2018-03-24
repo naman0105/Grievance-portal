@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome</title>
+  </head>
+  <link rel="stylesheet" href="css/bootstrap.min.css"  />
+  <script src="js/xlsx.full.min.js"></script>
+
+  <body>
+    <br />
+    <br />
+  <div id="first">
+
+    <center>
+      <div class="container">
+        <div class="jumbotron">
+          <h4>Enter the name of your Organization::</h4>
+          <input type="text" placeholder="name of organization" id="organization"/>
+          <hr />
+          <button class="btn btn-danger" onclick="addlevel(); start();" >add a new level</button>
+          <br />
+          <br />
+          <!-- <input type="file"  id="xlf" /> -->
+          <div id="levels"></div>
+          <button onclick="uploadJson(); Submit();" style="cursor:not-allowed" class="btn btn-primary" id="button" disabled>Submit</button>
+        </div>
+      </div>
+    <div id="yeah"></div>
+  </center>
+
+</div>
+
+
+  <div id="second">
+
+  <center>
+    <div class="container">
+      <div class="jumbotron">
+        <button class="btn btn-success" onclick="showlevels() " id="main">Display levels</button>
+        <br />
+        <br />
+        <br />
+        <div id="levelsdisplay">
+
+        </div>
+      </div>
+    </div>
+  </center>
+
+  </div>
+<script src="js/myfile.js"></script>
+  <!-- This Code is For Sign In Authentication on FireBase -->
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+
+   <!-- include the individual components we may need
+           firebase-app - The core firebase client
+           firebase-auth - Firebase Authentication
+           firebase-database - The Firebase Realtime Database   -->
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA4fnw4_dcogotGeaBx1rdyelMoFYh8pys",
+    authDomain: "ggrpdebugtest.firebaseapp.com",
+    databaseURL: "https://ggrpdebugtest.firebaseio.com",
+    projectId: "ggrpdebugtest",
+    storageBucket: "",
+    messagingSenderId: "754564807810"
+  };
+  firebase.initializeApp(config);
+
+
+</script>
+
+
+  </body>
+</html>

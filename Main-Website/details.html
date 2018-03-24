@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>
+            Welcome USer
+        </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+    </head>
+    <body>
+        <center>
+                <h2 id="Heading"></h2>
+                <hr>
+                <br>
+                <br>
+        <div id="Account_details"></div>
+        <div class="col-sm-offset-2 col-sm-3">
+            <button type="submit" class="btn btn-success" onclick="Submit_a_Query()">Click Here to Submit a Query</button>
+            <hr />
+            <button type="submit" class="btn btn-success" onclick="Check_Query_Status()">Click Here to Check Query Status</button>
+        </div>
+
+        <hr />
+
+        <h3>Below is the list of queries for you ::</h3><br />
+        <button onclick=showquery() class="btn btn-primary">show query</button>
+        <hr />
+        <div class="container">
+          <div class="jumbotron">
+            <div id="querydetails">
+
+            </div>
+          </div>
+          <div id="submitterdetail">
+
+          </div>
+        </div>
+
+
+
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+            apiKey: "AIzaSyA4fnw4_dcogotGeaBx1rdyelMoFYh8pys",
+            authDomain: "ggrpdebugtest.firebaseapp.com",
+            databaseURL: "https://ggrpdebugtest.firebaseio.com",
+            projectId: "ggrpdebugtest",
+            storageBucket: "ggrpdebugtest.appspot.com",
+            messagingSenderId: "754564807810"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script type="text/javascript" src="js/Account_Details.js"></script>
+    </body>
+</html>
