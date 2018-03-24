@@ -7,5 +7,17 @@ The admin-panel is hosted at :: https://naman0105.github.io/Grievance-portal/Mai
 
 I am using firebase real time database to store the data and firebase otp authentication to authenticate the employee. 
 
+Steps to use the application
+1. first fill out the excel sheets according to the field in the level node given in the picture below.
+2. create levels in the admin panel.
+3. feed excel sheets for each level.
+4. open main-website
+5. click on 'login for first time'.
+6. authenticate phone number.
+7. you are logged inn, you can register a complain and according to the hierarchy checkout the account of the supervisor.
+
+
+Given below is the structure of the firebase realtime database.
+
 ![firebase structure](https://github.com/naman0105/Grievance-portal/blob/master/2018-03-24%20(1).png)
 
