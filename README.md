@@ -3,7 +3,7 @@ This website is made for small size companies. Using this website the employee c
 
 The admin module contains functionality to create the hierchy of the organization and to import excel sheets to it to fill the data in the firebase.
 The main-website is hosted at :: https://ggrpdebugtest.firebaseapp.com/ or https://naman0105.github.io/Grievance-portal/Main-Website/
-The admin-panel is hosted at :: https://naman0105.github.io/Grievance-portal/Main-Website/Admin-Panel
+The admin-panel is hosted at :: https://naman0105.github.io/Grievance-portal/Admin-Panel
 
 I am using firebase real time database to store the data and firebase otp authentication to authenticate the employee. 
 
