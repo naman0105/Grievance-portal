@@ -72,8 +72,8 @@ function Search(){
   if( boxvalue == ""){ return;}
     for(var i=0; i< myBooks.length ; i++){
       // if(myBooks[i].name == boxvalue ){
-        if(myBooks[i].name.search(boxvalue.toLowerCase()) == 0){
-        preObject.appendChild(document.createTextNode(myBooks[i].name+"     "+ myBooks[i].id));
+        if(myBooks[i].Name.search(boxvalue.toLowerCase()) == 0){
+        preObject.appendChild(document.createTextNode("Name : "+ myBooks[i].Name+"     "+ "ID : " + myBooks[i].ID+"     Phone Number"+ myBooks[i].Phone_Number+"     Email-ID"+ myBooks[i].Email_ID+"     Department"+ myBooks[i].Department));
         preObject.appendChild(document.createElement('hr'));
       };
     }
