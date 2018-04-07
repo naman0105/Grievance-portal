@@ -11,10 +11,11 @@ Steps to use the application
 1. first fill out the excel sheets according to the field in the level node given in the picture below.
 2. create levels in the admin panel.
 3. feed excel sheets for each level.
-4. open main-website
-5. click on 'login for first time'.
-6. authenticate phone number.
-7. you are logged inn, you can register a complain and according to the hierarchy checkout the account of the supervisor.
+4. Excel sheets should be of the same format as given in the Example folder.
+5. open main-website
+6. click on 'login for first time'(if you have not given the password field in the excel sheets).
+7. authenticate phone number.
+8. you are logged inn, you can register a complain and according to the hierarchy checkout the account of the supervisor.
 
 
 Given below is the structure of the firebase realtime database.
