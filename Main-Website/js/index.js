@@ -6,6 +6,7 @@ var flag = false;
 function Submit_SignIn(){
     console.log('Submit Clicked');
     document.getElementById('submitSignIn').disabled = true;
+    orgname  = document.getElementById('Company_Name').value;
     PhoneNumber = document.getElementById("Phone_Number").value;
     console.log(Phone_Number);
 
